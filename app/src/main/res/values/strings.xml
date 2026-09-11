@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Jogo da Velha</string>
+    <string name="status_turn">Vez do jogador: %1$s</string>
+    <string name="status_win">Jogador %1$s venceu!</string>
+    <string name="status_draw">Empate!</string>
+    <string name="score_format">X: %1$d   O: %2$d   Empates: %3$d</string>
+    <string name="restart">Reiniciar Jogo</string>
+</resources>
