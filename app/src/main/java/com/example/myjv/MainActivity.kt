@@ -195,6 +195,7 @@ class MainActivity : AppCompatActivity() {
             button.isEnabled = true
             button.clearAnimation()
             button.backgroundTintList = null
+            button.startAnimation(AnimationUtils.loadAnimation(this, R.anim.place_pop))
         }
 
         updateStatusText()
