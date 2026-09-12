@@ -17,6 +17,16 @@ Aplicativo Android nativo (Kotlin + XML Views) que implementa o clássico Jogo d
 - **Desafio 1 — UI e Feedback:** as três células da combinação vencedora são destacadas em verde e recebem uma animação de pulso (`res/anim/win_pulse.xml`) ao final da partida.
 - **Desafio 2 — Gestão de Estado:** um placar de sessão (vitórias de X, vitórias de O e empates) é mantido em `MainActivity` e **não é zerado** ao reiniciar o tabuleiro — apenas volta a zero quando o app é totalmente encerrado. O estado também é preservado em rotações de tela via `onSaveInstanceState`.
 
+## Capturas de tela
+
+Coloque os prints do app na pasta `docs/screenshots/` usando os nomes abaixo (ou ajuste os nomes/legendas conforme suas imagens):
+
+| Tela inicial | Partida em andamento | Vitória | Empate |
+|---|---|---|---|
+| ![Tela inicial](docs/screenshots/tela-inicial.png) | ![Partida em andamento](docs/screenshots/em-andamento.png) | ![Vitória](docs/screenshots/vitoria.png) | ![Empate](docs/screenshots/empate.png) |
+
+> Se uma imagem ainda não existir na pasta, o GitHub mostra a célula quebrada — basta adicionar o arquivo `.png` com o nome correspondente que a imagem aparece automaticamente.
+
 ## Estrutura principal
 
 ```

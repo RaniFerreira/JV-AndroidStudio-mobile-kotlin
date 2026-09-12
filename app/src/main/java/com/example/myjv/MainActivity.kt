@@ -113,6 +113,7 @@ class MainActivity : AppCompatActivity() {
         button.text = currentPlayer.toString()
         button.setTextColor(colorForPlayer(currentPlayer))
         button.isEnabled = false
+        button.startAnimation(AnimationUtils.loadAnimation(this, R.anim.place_pop))
 
         val winPattern = findWinningPattern()
         when {
@@ -171,6 +172,13 @@ class MainActivity : AppCompatActivity() {
             !gameActive -> getString(R.string.status_draw)
             else -> getString(R.string.status_turn, currentPlayer)
         }
+        tvStatus.setTextColor(
+            if (winPattern != null || gameActive) {
+                colorForPlayer(currentPlayer)
+            } else {
+                ContextCompat.getColor(this, R.color.statusText)
+            }
+        )
     }
 
     private fun updateScoreText() {
@@ -186,9 +194,7 @@ class MainActivity : AppCompatActivity() {
             button.text = ""
             button.isEnabled = true
             button.clearAnimation()
-            button.backgroundTintList = ColorStateList.valueOf(
-                ContextCompat.getColor(this, R.color.cellDefault)
-            )
+            button.backgroundTintList = null
         }
 
         updateStatusText()

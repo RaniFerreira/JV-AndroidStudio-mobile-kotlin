@@ -8,10 +8,22 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="playerXColor">#FF1976D2</color>
-    <color name="playerOColor">#FFD32F2F</color>
-    <color name="cellDefault">#FFECEFF1</color>
-    <color name="cellDefaultPressed">#FFCFD8DC</color>
-    <color name="winHighlight">#FF81C784</color>
-    <color name="statusText">#FF212121</color>
+    <!-- Fundo em gradiente -->
+    <color name="gradientStart">#FF0F2027</color>
+    <color name="gradientMid">#FF203A43</color>
+    <color name="gradientEnd">#FF2C5364</color>
+
+    <!-- Elementos translúcidos (efeito vidro) -->
+    <color name="glassCard">#33FFFFFF</color>
+    <color name="glassStroke">#4DFFFFFF</color>
+    <color name="cellDefault">#26FFFFFF</color>
+    <color name="cellDefaultPressed">#4DFFFFFF</color>
+
+    <color name="playerXColor">#FF4DD0E1</color>
+    <color name="playerOColor">#FFFFB74D</color>
+    <color name="winHighlight">#8066BB6A</color>
+
+    <color name="titleText">#FFFFFFFF</color>
+    <color name="statusText">#FFFFFFFF</color>
+    <color name="scoreText">#CCFFFFFF</color>
 </resources>
